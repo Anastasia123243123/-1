@@ -1,0 +1,26 @@
+using System;
+
+namespace P_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите число n:");
+            int n = int.Parse(Console.ReadLine());
+            int k = 0;
+            int x = 0;
+           
+            for (int i = 100; i <= 999; i++)
+            {
+                x = i;
+                x = x / 100 + x / 10 % 10 + x % 10;
+                if (x == n)
+                {
+                    k += 1;
+                }
+            }
+            Console.WriteLine(k);
+        }
+    }
+}
