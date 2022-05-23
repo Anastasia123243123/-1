@@ -1,0 +1,27 @@
+using System;
+
+namespace P_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите число x");
+            Console.WriteLine("Введите число y");
+            
+
+            var x = Convert.ToSingle(Console.ReadLine());
+            var y = Convert.ToSingle(Console.ReadLine());
+            
+
+            if (x>0)
+            {
+                Console.WriteLine("Вывод: Принадлежит");
+            }
+            else
+            {
+                Console.WriteLine("Вывод: Не принадлежит");
+            }
+        }
+    }
+}
