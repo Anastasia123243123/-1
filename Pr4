@@ -1,0 +1,36 @@
+using System;
+
+namespace P_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите число N:");
+            int N = int.Parse(Console.ReadLine());
+            int x = 0;
+            
+
+            for (int i = 2; i < N + 1; i++)
+            {
+                int ok = 0;
+                for (int j = 1; j < i + 1; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        ok += 1;
+                    }
+                    else
+                    {
+                        ok += 0;
+                    }
+                }
+                if (ok == 2)
+                {
+                    x += 1;
+                }
+            }
+            Console.WriteLine("Количество простых чисел равно:" + x);
+        }
+    }
+}
